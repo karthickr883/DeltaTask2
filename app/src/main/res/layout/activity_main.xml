@@ -13,7 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
+
+        android:inputType="textCapWords"
         android:text=""
         android:hint="Team1"/>
 
@@ -22,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textCapWords"
         android:text=""
         android:hint="Team2"/>
 
@@ -31,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textCapWords"
         android:text=""
         android:hint="Venue"/>
 
@@ -40,9 +41,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:hint="Date"
+        android:inputType="textCapWords"
         android:text=""
-        android:hint="Date"/>
+        android:focusable="false" />
 
     <EditText
         android:id="@+id/time"
@@ -51,20 +53,39 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text=""
+        android:focusable="false"
         android:hint="Time"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Select img1"/>
+
+        <Button
+            android:id="@+id/img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:text="Select Img2" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="update"
-        android:layout_marginLeft="150dp"/>
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="20dp"/>
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
+        android:layout_marginLeft="140dp"
         android:text="Add" />
 
     <ListView
